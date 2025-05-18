@@ -12,30 +12,30 @@ This document describes the fields available in the `config.json` file used by N
 
 ```json
 {
-  "name": "example-project",
-  "displayName": "Example Project",
-  "version": "1.0.0",
-  "type": "application",
-  "description": "An example project to demonstrate the use of a configuration file.",
-  "authors": [
-    {
-      "name": "Neko Nik",
-      "email": "admin@nekonik.com"
-    }
-  ],
-  "license": "MIT",
-  "readme": "README.md",
-  "repository": "https://github.com/Neko-Nik/NIKL-Core",
-  "homepage": "https://nekonik.com",
-  "dependencies": {
-    "os": "0.0.1",
-    "regex": "1.0.0"
-  },
-  "keywords": [
-    "example",
-    "project",
-    "configuration"
-  ]
+    "name": "example-project",
+    "displayName": "Example Project",
+    "version": "1.0.0",
+    "description": "An example project to demonstrate the use of a configuration file.",
+    "authors": [
+        {
+            "name": "Neko Nik",
+            "email": "admin@nekonik.com"
+        }
+    ],
+    "license": "MIT",
+    "readmeFile": "README.md",
+    "licenseFile": "LICENSE",
+    "repository": "https://github.com/Neko-Nik/NIKL-Core",
+    "homepage": "https://nekonik.com",
+    "dependencies": {
+        "os": "0.0.1",
+        "regex": "1.0.0"
+    },
+    "keywords": [
+        "example",
+        "project",
+        "configuration"
+    ]
 }
 ````
 
@@ -60,12 +60,6 @@ This document describes the fields available in the `config.json` file used by N
 * **Format**: [Semantic Versioning](https://semver.org/) (e.g., `1.0.0`)
 * **Description**: Project version.
 
-### `type`
-
-* **Type**: `"application"` | `"library"`
-* **Required**: ✅
-* **Description**: Defines whether the project is a standalone application or a reusable library.
-
 ### `description`
 
 * **Type**: `string`
@@ -81,7 +75,13 @@ This document describes the fields available in the `config.json` file used by N
 * **Type**: `string`
 * **Description**: The license under which the project is distributed (e.g., `MIT`, `Apache-2.0`).
 
-### `readme`
+### `licenseFile`
+
+* **Type**: `string`
+* **Default**: `"LICENSE"`
+* **Description**: Path to the license file for the project.
+
+### `readmeFile`
 
 * **Type**: `string`
 * **Default**: `"README.md"`
