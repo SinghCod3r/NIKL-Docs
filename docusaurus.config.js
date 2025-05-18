@@ -34,7 +34,15 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          lastVersion: 'current',
           editUrl: 'https://github.com/Neko-Nik/NIKL-Docs/edit/main/',
+            versions: {
+                current: {
+                    label: 'v0.1 (unreleased)',
+                },
+            },
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -65,6 +73,12 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownActiveClassDisabled: true,
+            // dropdownItemsAfter: [{href: 'https://nikl-pkg.nekonik.com', label: 'Package Manager (WIP)'}],
+          }
         ],
       },
       footer: {
