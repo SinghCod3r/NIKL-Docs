@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/introduction"
           >
             Get Started with NIKL 🚀
           </Link>
@@ -81,7 +81,7 @@ export default function Home() {
             <p>Explore the documentation, try the examples, and join our community.</p>
             <Link
               className="button button--primary button--lg"
-              to="/docs/intro"
+              to="/docs/introduction"
             >
               Start Learning NIKL
             </Link>
