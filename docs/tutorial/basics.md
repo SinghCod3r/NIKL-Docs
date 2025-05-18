@@ -4,11 +4,18 @@ sidebar_position: 1
 
 # Basics
 
-NIKL language uses `.nk` as its file extension.
+NIKL language uses `.nk` as its file extension. The interpreter is designed to be lightweight and fast, making it suitable for scripting, orchestration, and lightweight services.
+
+There is no main function in NIKL. The code is executed line by line, and there is no initial entry point. This allows for a more flexible and dynamic programming style.
+
+<!-- But before we dive into the details, install the NIKL interpreter. You can find the installation instructions in the [installation guide](../installation/installation.md). -->
+
+Download the NIKL interpreter syntax highlighter from the VSCode marketplace. You can find it by searching for "NIKL" in the extensions tab or by visiting the [NIKL extension page](https://marketplace.visualstudio.com/items?itemName=Neko-Nik.nikl-language-support).
+
 
 ## Hello World
 
-```nk
+```nikl title="neko.nk"
 print("Hello, World!")
 ```
 This simple program prints "Hello, World!" to the console.
@@ -17,7 +24,7 @@ This simple program prints "Hello, World!" to the console.
 
 Variables in NIKL are declared using the `let` keyword. The type of the variable is inferred from the assigned value.
 
-```nk
+```nikl title="variables.nk"
 let name = "NIKL"
 let age = 5
 ```
@@ -27,7 +34,7 @@ In this example, `name` is a string variable and `age` is an integer variable.
 
 Functions are defined using the `fn` keyword. You can define parameters and return types.
 
-```nk
+```nikl
 fn greet(name: String) -> String {
     return "Hello, " + name + "!"
 }
@@ -40,7 +47,7 @@ All the type hints are optional. The compiler will infer the types for you.
 ## Control Flow
 NIKL supports standard control flow constructs like `if`, `elif`, `else`, `for`, `while` and `loop`.
 
-```nk
+```nikl
 let number = 10
 if number > 0 {
     print("Positive")
@@ -60,7 +67,7 @@ NIKL supports collections like arrays and hash maps.
 
 Arrays are defined using square brackets `[]`.
 
-```nk
+```nikl
 let numbers = [1, 2, 3, 4, 5]
 
 for number in numbers {
@@ -73,7 +80,7 @@ This example creates an array of numbers and iterates through it, printing each 
 ### Hash Maps
 Hash maps are defined using curly braces `{}`.
 
-```nk
+```nikl
 let person = {
     "name": "NIKL",
     "age": 5
@@ -90,7 +97,7 @@ This example creates a hash map with keys and values and iterates through it, pr
 ## File Import
 NIKL allows you to import files using the `import` keyword.
 
-```nk
+```nikl
 import "utils.nk" as utils
 let result = utils.add(5, 10)
 print(result)
