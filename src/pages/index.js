@@ -68,7 +68,7 @@ export default function Home() {
       <main>
         <section className={styles.features}>
           <div className="container">
-            <div className="row">
+            <div className={clsx('row', styles.featuresRow)}>
               {features.map((props, idx) => (
                 <Feature key={idx} {...props} />
               ))}

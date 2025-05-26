@@ -20,11 +20,6 @@
   --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #e3f2fd);
   --hero-glow: rgba(33, 150, 243, 0.2);
   
-  /* Features section gradient */
-  --features-bg-start: #e8f4fc;
-  --features-bg-end: #f0f7fc;
-  --features-glow: rgba(0, 150, 215, 0.1);
-  
   /* CTA section gradient */
   --cta-bg-start: #e8f4fc;
   --cta-bg-end: #dceefb;
@@ -77,11 +72,6 @@
   --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #0f2133);
   --hero-glow: rgba(0, 180, 255, 0.3);
   
-  /* Features section gradient */
-  --features-bg-start: #1c1f26;
-  --features-bg-end: #252a35;
-  --features-glow: rgba(0, 150, 215, 0.1);
-  
   /* CTA section gradient */
   --cta-bg-start: #1c1f26;
   --cta-bg-end: #151a23;
@@ -120,4 +110,3 @@
 [data-theme='light'] .navbar {
   background-color: rgba(249, 249, 249, 0.8);
 }
-
