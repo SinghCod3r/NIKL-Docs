@@ -51,8 +51,8 @@ const features = [
   {
     title: 'Module System',
     description: 'Organize your code into reusable modules.',
-    },
-    {
+  },
+  {
     title: 'Package Management',
     description: 'Easily manage dependencies with NIKL packages.',
   },
@@ -80,7 +80,7 @@ export default function Home() {
             <h2>Ready to dive in?</h2>
             <p>Explore the documentation, try the examples, and join our community.</p>
             <Link
-              className="button button--primary button--lg"
+              className={clsx("button button--primary button--lg", styles['button--primary'])}
               to="/docs/introduction"
             >
               Start Learning NIKL

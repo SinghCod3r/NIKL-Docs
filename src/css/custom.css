@@ -8,7 +8,52 @@
   --ifm-color-primary-lightest: #99e6ff;
 
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 180, 255, 0.1); /* subtle blue glow */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 180, 255, 0.1); 
+  
+  /* Light theme color scheme */
+  --section-primary-bg: linear-gradient(135deg, #e6f7ff, #ffffff);
+  --section-secondary-bg: linear-gradient(135deg, #f0f7fc, #e8f4fc);
+  
+  /* Hero section gradient */
+  --hero-bg-start: #e1f5fe;
+  --hero-bg-end: #bbdefb;
+  --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #e3f2fd);
+  --hero-glow: rgba(33, 150, 243, 0.2);
+  
+  /* Features section gradient */
+  --features-bg-start: #e8f4fc;
+  --features-bg-end: #f0f7fc;
+  --features-glow: rgba(0, 150, 215, 0.1);
+  
+  /* CTA section gradient */
+  --cta-bg-start: #e8f4fc;
+  --cta-bg-end: #dceefb;
+  --cta-glow: rgba(0, 150, 215, 0.12);
+  --cta-border: rgba(0, 150, 215, 0.1);
+  
+  /* Feature cards */
+  --feature-bg: rgba(255, 255, 255, 0.85);
+  --feature-border: rgba(0, 150, 215, 0.15);
+  --feature-shadow: rgba(0, 0, 0, 0.08);
+  --feature-hover-shadow: rgba(0, 120, 215, 0.2);
+  --feature-hover-border: rgba(0, 180, 255, 0.4);
+  --feature-glow: rgba(0, 150, 215, 0.25);
+  --feature-accent: rgba(0, 150, 215, 0.7);
+  --feature-text: #2a5377;
+  
+  /* Text colors */
+  --text-primary: #2a5377;
+  --text-secondary: #456a89;
+  
+  /* Button colors */
+  --button-text: #ffffff;
+  --button-outline-bg: rgba(0, 150, 215, 0.08);
+  --button-outline-hover-bg: rgba(0, 150, 215, 0.15);
+  --button-glow: rgba(0, 150, 215, 0.08);
+  --button-hover-glow: rgba(0, 150, 215, 0.15);
+  
+  /* Section divider */
+  --section-divider: rgba(0, 150, 215, 0.15);
 }
 
 [data-theme='dark'] {
@@ -20,5 +65,59 @@
   --ifm-color-primary-lighter: #66f1ff;
   --ifm-color-primary-lightest: #99f6ff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(0, 229, 255, 0.15); /* neon glow */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 229, 255, 0.15); 
+  
+  /* Dark theme colors */
+  --section-primary-bg: linear-gradient(135deg, #0d1117, #131922);
+  --section-secondary-bg: linear-gradient(135deg, #1c1f26, #252a35);
+  
+  /* Hero section gradient */
+  --hero-bg-start: #0d1f30;
+  --hero-bg-end: #0a1722;
+  --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #0f2133);
+  --hero-glow: rgba(0, 180, 255, 0.3);
+  
+  /* Features section gradient */
+  --features-bg-start: #1c1f26;
+  --features-bg-end: #252a35;
+  --features-glow: rgba(0, 150, 215, 0.1);
+  
+  /* CTA section gradient */
+  --cta-bg-start: #1c1f26;
+  --cta-bg-end: #151a23;
+  --cta-glow: rgba(0, 180, 255, 0.15);
+  --cta-border: rgba(0, 180, 255, 0.1);
+  
+  /* Feature cards */
+  --feature-bg: rgba(30, 35, 45, 0.9);
+  --feature-border: rgba(0, 180, 255, 0.1);
+  --feature-shadow: rgba(0, 0, 0, 0.2);
+  --feature-hover-shadow: rgba(0, 180, 255, 0.3);
+  --feature-hover-border: rgba(0, 180, 255, 0.4);
+  --feature-glow: rgba(0, 180, 255, 0.3);
+  --feature-accent: rgba(0, 180, 255, 0.7);
+  --feature-text: #e6f7ff;
+  
+  /* Text colors */
+  --text-primary: #e6f7ff;
+  --text-secondary: #b3e0ff;
+  
+  /* Button colors */
+  --button-text: #001525;
+  --button-outline-bg: rgba(0, 180, 255, 0.1);
+  --button-outline-hover-bg: rgba(0, 180, 255, 0.15);
+  --button-glow: rgba(0, 180, 255, 0.1);
+  --button-hover-glow: rgba(0, 180, 255, 0.15);
+  
+  /* Section divider */
+  --section-divider: rgba(0, 180, 255, 0.15);
 }
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(13, 17, 23, 0.8);
+}
+
+[data-theme='light'] .navbar {
+  background-color: rgba(249, 249, 249, 0.8);
+}
+
