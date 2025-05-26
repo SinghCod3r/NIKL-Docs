@@ -54,9 +54,10 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            image: 'img/docusaurus-social-card.jpg',
+            image: 'img/nikl-social-card.jpg',
             navbar: {
-                title: 'NIKL',
+                title: 'NIK-Lang',
+                hideOnScroll: true,
                 logo: {
                     alt: 'NIKL Logo',
                     src: 'img/logo.svg',
