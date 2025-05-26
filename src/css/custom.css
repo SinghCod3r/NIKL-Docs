@@ -1,107 +1,97 @@
 :root {
-  --ifm-color-primary: #00b4ff;
-  --ifm-color-primary-dark: #00a2e6;
-  --ifm-color-primary-darker: #0094d3;
-  --ifm-color-primary-darkest: #0076a8;
-  --ifm-color-primary-light: #33c5ff;
-  --ifm-color-primary-lighter: #66d6ff;
-  --ifm-color-primary-lightest: #99e6ff;
+  --ifm-color-primary: #3a77ce;
+  --ifm-color-primary-dark: #336bb9;
+  --ifm-color-primary-darker: #2e61a8;
+  --ifm-color-primary-darkest: #264d87;
+  --ifm-color-primary-light: #5c91d7;
+  --ifm-color-primary-lighter: #85ade4;
+  --ifm-color-primary-lightest: #cfe3fb;
 
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 180, 255, 0.1); 
+  --docusaurus-highlighted-code-line-bg: rgba(58, 119, 206, 0.1); 
   
   /* Light theme color scheme */
-  --section-primary-bg: linear-gradient(135deg, #e6f7ff, #ffffff);
-  --section-secondary-bg: linear-gradient(135deg, #f0f7fc, #e8f4fc);
+  --section-primary-bg: linear-gradient(135deg, #f0f6fd, #ffffff);
+  --section-secondary-bg: linear-gradient(135deg, #f5f8fc, #edf3fb);
   
-  /* Hero section gradient */
-  --hero-bg-start: #e1f5fe;
-  --hero-bg-end: #bbdefb;
-  --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #e3f2fd);
-  --hero-glow: rgba(33, 150, 243, 0.2);
+  --hero-bg-start: #e8f0fc;
+  --hero-bg-end: #d2e1f8;
+  --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #cfe3fb);
+  --hero-glow: rgba(58, 119, 206, 0.2);
   
-  /* CTA section gradient */
-  --cta-bg-start: #e8f4fc;
-  --cta-bg-end: #dceefb;
-  --cta-glow: rgba(0, 150, 215, 0.12);
-  --cta-border: rgba(0, 150, 215, 0.1);
+  --cta-bg-start: #edf3fb;
+  --cta-bg-end: #e3ecfa;
+  --cta-glow: rgba(58, 119, 206, 0.12);
+  --cta-border: rgba(58, 119, 206, 0.1);
   
-  /* Feature cards */
-  --feature-bg: rgba(255, 255, 255, 0.85);
-  --feature-border: rgba(0, 150, 215, 0.15);
-  --feature-shadow: rgba(0, 0, 0, 0.08);
-  --feature-hover-shadow: rgba(0, 120, 215, 0.2);
-  --feature-hover-border: rgba(0, 180, 255, 0.4);
-  --feature-glow: rgba(0, 150, 215, 0.25);
-  --feature-accent: rgba(0, 150, 215, 0.7);
+  --feature-bg: rgba(255, 255, 255, 0.9);
+  --feature-border: rgba(58, 119, 206, 0.15);
+  --feature-shadow: rgba(0, 0, 0, 0.06);
+  --feature-hover-shadow: rgba(58, 119, 206, 0.2);
+  --feature-hover-border: rgba(58, 119, 206, 0.3);
+  --feature-glow: rgba(58, 119, 206, 0.2);
+  --feature-accent: rgba(58, 119, 206, 0.65);
   --feature-text: #2a5377;
   
-  /* Text colors */
-  --text-primary: #2a5377;
+  --text-primary: #1e3555;
   --text-secondary: #456a89;
   
-  /* Button colors */
   --button-text: #ffffff;
-  --button-outline-bg: rgba(0, 150, 215, 0.08);
-  --button-outline-hover-bg: rgba(0, 150, 215, 0.15);
-  --button-glow: rgba(0, 150, 215, 0.08);
-  --button-hover-glow: rgba(0, 150, 215, 0.15);
+  --button-outline-bg: rgba(58, 119, 206, 0.08);
+  --button-outline-hover-bg: rgba(58, 119, 206, 0.15);
+  --button-glow: rgba(58, 119, 206, 0.08);
+  --button-hover-glow: rgba(58, 119, 206, 0.15);
   
-  /* Section divider */
-  --section-divider: rgba(0, 150, 215, 0.15);
+  --section-divider: rgba(58, 119, 206, 0.15);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #00e5ff;
-  --ifm-color-primary-dark: #00c4e6;
-  --ifm-color-primary-darker: #00b0cc;
-  --ifm-color-primary-darkest: #0090a8;
-  --ifm-color-primary-light: #33eeff;
-  --ifm-color-primary-lighter: #66f1ff;
-  --ifm-color-primary-lightest: #99f6ff;
+  --ifm-color-primary: #3a77ce;
+  --ifm-color-primary-dark: #336bb9;
+  --ifm-color-primary-darker: #2e61a8;
+  --ifm-color-primary-darkest: #264d87;
+  --ifm-color-primary-light: #5c91d7;
+  --ifm-color-primary-lighter: #85ade4;
+  --ifm-color-primary-lightest: #cfe3fb;
 
-  --docusaurus-highlighted-code-line-bg: rgba(0, 229, 255, 0.15); 
+  --docusaurus-highlighted-code-line-bg: rgba(58, 119, 206, 0.15); 
   
-  /* Dark theme colors */
   --section-primary-bg: linear-gradient(135deg, #0d1117, #131922);
   --section-secondary-bg: linear-gradient(135deg, #1c1f26, #252a35);
   
-  /* Hero section gradient */
-  --hero-bg-start: #0d1f30;
+  --hero-bg-start: #111a28;
   --hero-bg-end: #0a1722;
   --hero-gradient: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end), #0f2133);
-  --hero-glow: rgba(0, 180, 255, 0.3);
+  --hero-glow: rgba(58, 119, 206, 0.3);
   
-  /* CTA section gradient */
   --cta-bg-start: #1c1f26;
   --cta-bg-end: #151a23;
-  --cta-glow: rgba(0, 180, 255, 0.15);
-  --cta-border: rgba(0, 180, 255, 0.1);
+  --cta-glow: rgba(58, 119, 206, 0.15);
+  --cta-border: rgba(58, 119, 206, 0.1);
   
-  /* Feature cards */
   --feature-bg: rgba(30, 35, 45, 0.9);
-  --feature-border: rgba(0, 180, 255, 0.1);
+  --feature-border: rgba(58, 119, 206, 0.1);
   --feature-shadow: rgba(0, 0, 0, 0.2);
-  --feature-hover-shadow: rgba(0, 180, 255, 0.3);
-  --feature-hover-border: rgba(0, 180, 255, 0.4);
-  --feature-glow: rgba(0, 180, 255, 0.3);
-  --feature-accent: rgba(0, 180, 255, 0.7);
-  --feature-text: #e6f7ff;
+  --feature-hover-shadow: rgba(58, 119, 206, 0.3);
+  --feature-hover-border: rgba(58, 119, 206, 0.4);
+  --feature-glow: rgba(58, 119, 206, 0.3);
+  --feature-accent: rgba(58, 119, 206, 0.7);
+  --feature-text: #dce9f9;
   
-  /* Text colors */
-  --text-primary: #e6f7ff;
-  --text-secondary: #b3e0ff;
+  --text-primary: #e6f0ff;
+  --text-secondary: #aac6e6;
   
-  /* Button colors */
   --button-text: #001525;
-  --button-outline-bg: rgba(0, 180, 255, 0.1);
-  --button-outline-hover-bg: rgba(0, 180, 255, 0.15);
-  --button-glow: rgba(0, 180, 255, 0.1);
-  --button-hover-glow: rgba(0, 180, 255, 0.15);
+  --button-outline-bg: rgba(58, 119, 206, 0.1);
+  --button-outline-hover-bg: rgba(58, 119, 206, 0.15);
+  --button-glow: rgba(58, 119, 206, 0.1);
+  --button-hover-glow: rgba(58, 119, 206, 0.15);
   
-  /* Section divider */
-  --section-divider: rgba(0, 180, 255, 0.15);
+  --section-divider: rgba(58, 119, 206, 0.15);
 }
+
+
+/* Custom styles for the navbar */
 
 [data-theme='dark'] .navbar {
   background-color: rgba(13, 17, 23, 0.8);
