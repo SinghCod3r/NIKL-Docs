@@ -12,7 +12,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+            <h1 className={styles.heroTitle}>Nik-Lang (NIKL)</h1>
             <p className={styles.heroSubtitle}>
               Lightweight general-purpose programming language with a focus on simplicity and readability.
             </p>
@@ -36,21 +36,21 @@ function HomepageHeader() {
           <div className={styles.heroGraphic}>
             <div className={styles.codeExampleContainer}>
               <CodeBlock
-                language="javascript"
-                title="example.nikl"
+                language="rust"
+                title="neko.nk"
                 className={styles.codeExample}
               >
-                {`// Simple NIKL example
-function fibonacci(n) {
-  if n <= 1 {
-    return n
-  }
-  return fibonacci(n-1) + fibonacci(n-2)
+                {`// Simple greeting for a list of users
+let greeting: String = "Welcome to Nik-Lang!"
+let users: Array = ["Neko", "Nik", "Nyan"]
+
+fn greet_user(user: String) -> None {
+    print(greeting)
+    print("Hello,", user, "!", "\\n")
 }
 
-print("First 10 Fibonacci numbers:")
-for i in 0..10 {
-  print("fib(\${i}) = \${fibonacci(i)}")
+for user in users {
+    greet_user(user)
 }`}
               </CodeBlock>
             </div>
@@ -144,33 +144,38 @@ function CodeShowcase() {
           </div>
           <div className={styles.showcaseCode}>
             <CodeBlock
-              language="javascript"
-              title="advanced.nikl"
+              language="rust"
+              title="advanced.nk"
               showLineNumbers
             >
 {`// Advanced NIKL example
-type Result<T, E> = Ok(T) | Err(E)
+fn analyze_user(
+    skills: Array, profile: HashMap, stats: Tuple,
+    on_analyze: callback_fn
+) -> None {
+    print("Data:", skills, profile, stats)
 
-function divide(a, b) -> Result<number, string> {
-  if b == 0 {
-    return Err("Cannot divide by zero")
-  }
-  return Ok(a / b)
+    print("Skill Count:", len(skills))
+    print("Profile Fields:", len(profile))
+    print("Stats Elements:", len(stats))
+
+    on_analyze()
 }
 
-// Pattern matching example
-function process_result(result) {
-  match result {
-    Ok(value) => print("Success: \${value}"),
-    Err(message) => print("Error: \${message}")
-  }
+fn callback_fn() -> None {
+    let temp_flag = True
+    print("Callback: Data has been analyzed.")
+    del temp_flag
 }
 
-let result = divide(10, 2)
-process_result(result)  // Success: 5
+let skill_set: Array = ["Nik", "Lang", "Design"]
+let user_profile: HashMap = {
+    "email": "neko@example.com",
+    "role": "Admin"
+}
+let user_stats: Tuple = (250, 4.9, "Gold")
 
-let error_result = divide(10, 0)
-process_result(error_result)  // Error: Cannot divide by zero`}
+analyze_user(skill_set, user_profile, user_stats, callback_fn)`}
             </CodeBlock>
           </div>
         </div>
