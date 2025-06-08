@@ -25,7 +25,7 @@ This document describes the fields available in the `config.json` file used by N
     "license": "MIT",
     "readmeFile": "README.md",
     "licenseFile": "LICENSE",
-    "repository": "https://github.com/Neko-Nik/NIKL-Core",
+    "repository": "https://github.com/Neko-Nik-Org/NIKL-Core",
     "homepage": "https://nekonik.com",
     "dependencies": {
         "os": "0.0.1",

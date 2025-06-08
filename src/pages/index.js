@@ -25,7 +25,7 @@ function HomepageHeader() {
               </Link>
               <Link
                 className={clsx("button button--outline button--lg", styles.githubButton)}
-                href="https://github.com/Neko-Nik/NIKL-Core"
+                href="https://github.com/Neko-Nik-Org/NIKL-Core"
                 target="_blank"
                 rel="noopener noreferrer"
               >

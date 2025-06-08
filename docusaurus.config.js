@@ -10,12 +10,12 @@ const config = {
     favicon: 'img/favicon.ico',
 
     // Set the production URL of your site here
-    url: 'https://nikl.nekonik.com',
+    url: 'https://nikl.nekonik.org',
     // Set the /<baseUrl>/ pathname under which your site is served
     baseUrl: '/',
 
     // GitHub pages deployment config.
-    organizationName: 'Neko-Nik', // Usually your GitHub org/user name.
+    organizationName: 'Neko-Nik-Org', // Usually your GitHub org/user name.
     projectName: 'NIKL-Docs', // Usually your repo name.
     deploymentBranch: 'gh-pages',
 
@@ -35,7 +35,7 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     lastVersion: 'current',
-                    editUrl: 'https://github.com/Neko-Nik/NIKL-Docs/edit/main/',
+                    editUrl: 'https://github.com/Neko-Nik-Org/NIKL-Docs/edit/main/',
                     versions: {
                         current: {
                             label: 'v0.1 (unreleased)',
@@ -70,7 +70,7 @@ const config = {
                         label: 'Docs',
                     },
                     {
-                        href: 'https://github.com/Neko-Nik/NIKL-Core',
+                        href: 'https://github.com/Neko-Nik-Org/NIKL-Core',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -94,7 +94,7 @@ const config = {
                             },
                             {
                                 label: 'NIKL GitHub',
-                                href: 'https://github.com/Neko-Nik/NIKL-Core',
+                                href: 'https://github.com/Neko-Nik-Org/NIKL-Core',
                             },
                             {
                                 label: 'Package Manager (WIP)',
@@ -123,6 +123,10 @@ const config = {
                         title: 'More',
                         items: [
                             {
+                                label: 'Organization Website',
+                                href: 'https://NekoNik.org',
+                            },
+                            {
                                 label: 'Author Website',
                                 href: 'https://www.nekonik.com',
                             },
@@ -132,7 +136,7 @@ const config = {
                             },
                             {
                                 label: 'GitHub Profile',
-                                href: 'https://github.com/Neko-Nik',
+                                href: 'https://github.com/Neko-Nik-Org',
                             },
                         ],
                     },
@@ -144,15 +148,6 @@ const config = {
                 darkTheme: prismThemes.dracula,
             },
         }),
-    plugins: [
-        [
-            'vercel-analytics',
-            {
-                debug: true,
-                mode: 'auto',
-            },
-        ],
-    ],
 };
 
 export default config;
