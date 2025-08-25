@@ -1,13 +1,33 @@
-# 📚 NIKL Documentation
+# NIKL Documentation
 
-This repository contains the official documentation for the NIKL programming language
-
-
-### 🚧 This documentation is still under active development
+![Docs](https://img.shields.io/badge/NIKL-Docs-blue)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
 
-## 🪪 License
+Welcome to the official documentation repository for **NIKL**, a modern programming language designed for speed, simplicity, and safety.
 
-All documentation content (including files in the `/docs` directory) is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**
+This repository contains the official docs and contribution guidelines for NIKL.  
+If you’re new to the language, start with the **Introduction** and **Getting Started** guides below.
 
-> ⚠️ **Disclaimer**: The NIKL documentation is provided **"as is"** and without any warranties. The author is not liable for errors or outcomes resulting from use. Use at your own risk.
+---
+
+## Documentation
+
+The documentation is available in the [docs](./docs) folder:
+
+- [Introduction](./docs/introduction.md) — Learn what NIKL is and its key features.
+- [Getting Started](./docs/getting-started.md) — Install the compiler and run your first program.
+- [Variables and Types](./docs/variables-and-types.md) — Understand variables and data types in NIKL.
+
+---
+
+## Contributing
+
+We welcome contributions to improve the NIKL documentation! 🎉  
+Please read our [CONTRIBUTING.md](./CONTRIBUTING.md) guide to learn how to report issues, suggest enhancements, or submit pull requests.
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](./LICENSE).
